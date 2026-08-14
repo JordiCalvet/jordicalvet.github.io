@@ -8,14 +8,16 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root{
     --ink:#1A1A1A;
     --soft:#5C5C5C;
     --rule:#E2E0DA;
-    --link:#17458F;
+    --link:#12355B;
+    --name:#12355B;
+    --head:#1B4332;
     --bg:#FDFDFC;
   }
   *{box-sizing:border-box}
@@ -26,19 +28,19 @@
     font-size:18px; line-height:1.62;
     -webkit-font-smoothing:antialiased;
   }
-  a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(23,69,143,.28)}
+  a{color:var(--link); text-decoration:none; border-bottom:1px solid rgba(18,53,91,.28)}
   a:hover{border-bottom-color:var(--link)}
   :focus-visible{outline:2px solid var(--link); outline-offset:2px}
 
   /* Header */
   .head{display:flex; gap:40px; align-items:flex-start; justify-content:space-between}
   .head > div{padding-top:6px}
-  h1{font-size:2.3rem; font-weight:600; letter-spacing:-.015em; margin:0 0 14px; line-height:1.1}
+  h1{font-size:2.3rem; font-weight:600; letter-spacing:-.015em; margin:0 0 14px; line-height:1.1; color:var(--name)}
   .affil{font-family:"Inter",system-ui,sans-serif; font-size:.95rem; line-height:1.6; color:var(--soft); margin:0}
-  .affil strong{color:var(--ink); font-weight:500}
+  .affil strong{color:var(--name); font-weight:600}
   .photo{
     width:172px; height:215px; flex:none; object-fit:cover; object-position:center top;
-    border-radius:2px; filter:grayscale(100%); background:var(--rule);
+    border-radius:2px; background:var(--rule);
   }
 
   .intro{margin:36px 0 0}
@@ -55,8 +57,8 @@
 
   h2{
     font-family:"Inter",system-ui,sans-serif;
-    font-size:.78rem; font-weight:500; text-transform:uppercase; letter-spacing:.11em;
-    color:var(--soft); margin:52px 0 18px; padding-bottom:8px; border-bottom:1px solid var(--rule);
+    font-size:.78rem; font-weight:600; text-transform:uppercase; letter-spacing:.11em;
+    color:var(--head); margin:52px 0 18px; padding-bottom:8px; border-bottom:1px solid var(--rule);
   }
   h3{
     font-family:"Inter",system-ui,sans-serif; font-size:.82rem; font-weight:500;
@@ -97,18 +99,17 @@
       <strong>Senior Research Fellow</strong>, The Future of Free Speech, Vanderbilt University
     </p>
   </div>
-  <!-- Replace src with your headshot. Delete this line if you'd rather have no photo. -->
   <img class="photo" src="headshot.jpg" alt="Jordi Calvet-Bademunt">
 </div>
 
 <div class="intro">
-  <p>I am a lawyer and policy researcher working on AI governance, risk management, and fundamental rights. My work asks two connected questions: how frontier AI systems actually behave when people use them, and whether the rules being written for those systems adequately protect rights.</p>
+  <p>I am a lawyer and policy researcher at The Future of Free Speech at Vanderbilt University, working on AI governance, risk management, and fundamental rights. My work considers how AI governance affects fundamental rights, particularly through risk-based regulation, and how AI models behave when people use them.</p>
 
-  <p>At Vanderbilt University, I designed and lead a research program on AI and freedom of expression, with a budget over $1 million and a team of more than ten legal and policy experts. We evaluate ten major AI models, including those built by OpenAI, Anthropic, Google, and Meta, and assess AI governance across twelve jurisdictions — among them the EU, the United States, China, Brazil, India, and South Korea. I bring the findings to the people making the decisions, through meetings with officials at the European Commission and the European Parliament and through direct engagement with developers.</p>
+  <p>At Vanderbilt, I designed and lead a research program on AI and freedom of expression, with a budget over $1 million and a team of more than ten legal and policy experts. We evaluate ten major AI models, including those built by OpenAI, Anthropic, Google, and Meta, and assess AI governance across twelve jurisdictions — among them the EU, the United States, China, Brazil, India, and South Korea. I bring the findings to policymakers, industry, and the public: through commentary in outlets from MSNBC to Lawfare, through conferences I speak at, and through direct advice to regulators and developers.</p>
 
-  <p>I am a member of the <strong>Freedom Online Coalition</strong>'s Advisory Network, one of 30 experts selected worldwide to advise an intergovernmental coalition of more than 40 democratic governments. Anthropic invited our team as one of three external organizations to review one of its models. I am completing a part-time Ph.D. at ESADE Law School on systemic-risk obligations under the EU AI Act and the Digital Services Act.</p>
+  <p>I am a member of the Freedom Online Coalition's Advisory Network, one of 30 experts selected worldwide to advise an intergovernmental coalition of more than 40 governments. Anthropic invited my team at Vanderbilt as one of three external organizations to review one of its models. I am completing a part-time Ph.D. at ESADE Law School on systemic-risk obligations under the EU AI Act and the Digital Services Act.</p>
 
-  <p>Before AI policy, I spent four years as a policy analyst in the OECD's Competition Division in Paris, leading reform projects with the governments of Brazil, Colombia, Ecuador, Peru, and Tunisia, and before that practiced antitrust and EU law at Uría Menéndez. I hold an M.P.A. from the Harvard Kennedy School and an LL.M. from the College of Europe.</p>
+  <p>Before joining Vanderbilt, I spent four years as a policy analyst at the OECD in Paris, leading reform projects with the governments of Brazil, Colombia, Ecuador, Peru, and Tunisia, and before that practiced as an attorney in EU law for five years in leading European law firms. I hold an M.P.A. from the Harvard Kennedy School and an LL.M. from the College of Europe.</p>
 </div>
 
 <div class="links">
@@ -121,48 +122,49 @@
 
 <h2>Peer-Reviewed Work</h2>
 <ul>
-  <li><a href="#">Position: AI Usage Policies Should Be Aligned with International Human Rights Law.</a> <span class="meta">2026. <em>Proceedings of the International Conference on Machine Learning (ICML)</em>.</span></li>
+  <li><a href="Papers/ai-usage-policies-human-rights-law-2026.pdf">Position: AI Usage Policies Should Be Aligned with International Human Rights Law.</a> <span class="meta">2026. <em>Proceedings of the International Conference on Machine Learning (ICML)</em>.</span></li>
 </ul>
 
 <h2>Research Reports</h2>
 <ul>
-  <li><a href="#">Artificial Intelligence and Freedom of Expression in the European Union.</a> <span class="meta">2025. <em>The Future of Free Speech, Vanderbilt University</em>. With J. Mchangama and I. Anzabi.</span></li>
-  <li><a href="#">Freedom of Expression in Generative AI Models.</a> <span class="meta">2025. <em>The Future of Free Speech, Vanderbilt University</em>. With J. Mchangama, I. Anzabi, and C. Olea.</span></li>
-  <li><a href="#">Artificial Intelligence and Freedom of Expression in the United States of America.</a> <span class="meta">2025. <em>The Future of Free Speech, Vanderbilt University</em>. With I. Anzabi and J. Mchangama.</span></li>
-  <li><a href="#">Freedom of Expression in Generative AI — A Snapshot of Content Policies.</a> <span class="meta">2024. <em>The Future of Free Speech, Vanderbilt University</em>. With J. Mchangama.</span></li>
+  <li><a href="Papers/ai-freedom-of-expression-european-union-2025.pdf">Artificial Intelligence and Freedom of Expression in the European Union.</a> <span class="meta">2025. <em>The Future of Free Speech, Vanderbilt University</em>. With J. Mchangama and I. Anzabi.</span></li>
+  <li><a href="Papers/freedom-of-expression-generative-ai-models-2025.pdf">Freedom of Expression in Generative AI Models.</a> <span class="meta">2025. <em>The Future of Free Speech, Vanderbilt University</em>. With J. Mchangama, I. Anzabi, and C. Olea.</span></li>
+  <li><a href="https://futurefreespeech.org/wp-content/uploads/2025/10/AI-Report-United-States.pdf">Artificial Intelligence and Freedom of Expression in the United States of America.</a> <span class="meta">2025. <em>The Future of Free Speech, Vanderbilt University</em>. With I. Anzabi and J. Mchangama.</span></li>
+  <li><a href="Papers/freedom-of-expression-generative-ai-content-policies-2024.pdf">Freedom of Expression in Generative AI — A Snapshot of Content Policies.</a> <span class="meta">2024. <em>The Future of Free Speech, Vanderbilt University</em>. With J. Mchangama.</span></li>
 </ul>
 
 <h3>Earlier reports at the OECD</h3>
 <ul>
-  <li><a href="#">OECD Competition Assessment Reviews: Brazil.</a> <span class="meta">2022. With G. Lapenta and A. Thiemann.</span></li>
-  <li><a href="#">The Promotion of Competitive Neutrality by Competition Authorities.</a> <span class="meta">2021. <em>OECD Global Forum on Competition</em>. With S. Flaherty.</span></li>
-  <li><a href="#">OECD-IDB Peer Reviews of Competition Law and Policy: Ecuador.</a> <span class="meta">2021. With F. Irarrázabal and D. Pachnou.</span></li>
-  <li><a href="#">Fighting Bid Rigging in Brazil: A Review of Federal Public Procurement.</a> <span class="meta">2021. With I. Gurpegui.</span></li>
-  <li><a href="#">Fighting Bid Rigging in the Health Sector in Peru.</a> <span class="meta">2021. With D. Pachnou.</span></li>
-  <li><a href="#">OECD Competition Assessment Reviews: Tunisia.</a> <span class="meta">2019. With P. Barkas, F. Maiorano, S. Kechida, F. Pacheco Vieira, and R. Sylla.</span></li>
+  <li><a href="https://www.oecd.org/en/publications/oecd-competition-assessment-reviews-brazil_d1694e46-en.html">OECD Competition Assessment Reviews: Brazil.</a> <span class="meta">2022. With G. Lapenta and A. Thiemann.</span></li>
+  <li><a href="https://www.oecd.org/en/publications/2021/11/the-promotion-of-competitive-neutrality-by-competition-authorities_f82583c2.html">The Promotion of Competitive Neutrality by Competition Authorities.</a> <span class="meta">2021. <em>OECD Global Forum on Competition</em>. With S. Flaherty.</span></li>
+  <li><a href="https://www.oecd.org/en/publications/2021/09/oecd-idb-peer-reviews-of-competition-law-and-policy-ecuador-2021_bc4b5e49.html">OECD-IDB Peer Reviews of Competition Law and Policy: Ecuador.</a> <span class="meta">2021. With F. Irarrázabal and D. Pachnou.</span></li>
+  <li><a href="https://www.oecd.org/en/publications/2021/05/fighting-bid-rigging-in-brazil_a5135918.html">Fighting Bid Rigging in Brazil: A Review of Federal Public Procurement.</a> <span class="meta">2021. With I. Gurpegui.</span></li>
+  <li><a href="https://www.oecd.org/en/publications/fighting-bid-rigging-in-the-health-sector-in-peru_13f7e8f4-en.html">Fighting Bid Rigging in the Health Sector in Peru.</a> <span class="meta">2021. With D. Pachnou.</span></li>
+  <li><a href="https://www.oecd.org/en/publications/2019/09/oecd-competition-assessment-reviews-tunisia_b111e4c1.html">OECD Competition Assessment Reviews: Tunisia.</a> <span class="meta">2019. With P. Barkas, F. Maiorano, S. Kechida, F. Pacheco Vieira, and R. Sylla.</span></li>
+  <li><a href="Papers/oecd-access-case-file-confidential-information-2019.pdf">Access to the Case File and Protection of Confidential Information.</a> <span class="meta">2019. <em>OECD Competition Committee, Working Party No. 3</em>.</span></li>
 </ul>
 
 <h2>Commentary and Op-Eds</h2>
 <ul>
-  <li><a href="#">AI, Mass Surveillance, and the Fight for Democratic Limits.</a> <span class="meta">2026. <em>The Bedrock Principle</em>.</span></li>
-  <li><a href="#">China's AI Governance Ambitions and Their Implications for Free Expression.</a> <span class="meta">2025. <em>Lawfare</em>. With J. Mchangama.</span></li>
-  <li><a href="#">Trump's War on "Woke AI" Will Stifle Innovation — and Free Speech.</a> <span class="meta">2025. <em>MSNBC</em>. With J. Mchangama.</span></li>
-  <li><a href="#">Dutch Warning on Chatbots Echoes Trump Attacks on "Woke AI."</a> <span class="meta">2025. <em>Tech Policy Press</em>.</span></li>
-  <li><a href="#">Who Decides What's Good for Society? AI, the DSA, and the Future of Expression in Europe.</a> <span class="meta">2025. <em>The Bedrock Principle</em>.</span></li>
-  <li><a href="#">The AI Election Panic: How Fear-Driven Policies Could Limit Free Expression.</a> <span class="meta">2025. <em>Tech Policy Press</em>.</span></li>
-  <li><a href="#">One Year Later: AI Chatbots Show Progress on Free Speech — But Some Concerns Remain.</a> <span class="meta">2025. <em>The Bedrock Principle</em>. With J. Mchangama and I. Anzabi.</span></li>
-  <li><a href="#">Safeguarding Freedom of Expression in the AI Era.</a> <span class="meta">2024. <em>Tech Policy Press</em>.</span></li>
-  <li><a href="#">DSA Showdown: Unpacking the EU's Preliminary Findings Against X.</a> <span class="meta">2024. <em>Tech Policy Press</em>.</span></li>
-  <li><a href="#">The Digital Services Act Meets the AI Act: Bridging Platform and AI Governance.</a> <span class="meta">2024. <em>Tech Policy Press</em>. With J. Barata.</span></li>
-  <li><a href="#">Generative AI Developers Should Commit to Free Speech and Access to Information.</a> <span class="meta">2024. <em>Tech Policy Press</em>.</span></li>
-  <li><a href="#">AI Chatbots Refuse to Produce "Controversial" Output — Why That's a Free Speech Problem.</a> <span class="meta">2024. <em>The Conversation</em>. With J. Mchangama.</span></li>
-  <li><a href="#">The European Commission's Approach to DSA Systemic Risk Is Concerning for Freedom of Expression.</a> <span class="meta">2023. <em>Tech Policy Press</em>. With J. Barata.</span></li>
+  <li><a href="https://www.bedrockprinciple.com/p/ai-mass-surveillance-and-the-fight">AI, Mass Surveillance, and the Fight for Democratic Limits.</a> <span class="meta">2026. <em>The Bedrock Principle</em>.</span></li>
+  <li><a href="https://www.lawfaremedia.org/article/china-s-ai-governance-ambitions-and-their-implications-for-free-expression">China's AI Governance Ambitions and Their Implications for Free Expression.</a> <span class="meta">2025. <em>Lawfare</em>. With J. Mchangama.</span></li>
+  <li><a href="https://www.msnbc.com/opinion/msnbc-opinion/trump-woke-ai-anthropic-ceo-free-speech-rcna239199">Trump's War on "Woke AI" Will Stifle Innovation — and Free Speech.</a> <span class="meta">2025. <em>MSNBC</em>. With J. Mchangama.</span></li>
+  <li><a href="https://www.techpolicy.press/dutch-warning-on-chatbots-echoes-trump-attacks-on-woke-ai/">Dutch Warning on Chatbots Echoes Trump Attacks on "Woke AI."</a> <span class="meta">2025. <em>Tech Policy Press</em>.</span></li>
+  <li><a href="https://www.bedrockprinciple.com/p/who-decides-whats-good-for-society">Who Decides What's Good for Society? AI, the DSA, and the Future of Expression in Europe.</a> <span class="meta">2025. <em>The Bedrock Principle</em>.</span></li>
+  <li><a href="https://www.techpolicy.press/the-ai-election-panic-how-feardriven-policies-could-limit-free-expression/">The AI Election Panic: How Fear-Driven Policies Could Limit Free Expression.</a> <span class="meta">2025. <em>Tech Policy Press</em>.</span></li>
+  <li><a href="https://www.bedrockprinciple.com/p/one-year-later-ai-chatbots-show-progress">One Year Later: AI Chatbots Show Progress on Free Speech — But Some Concerns Remain.</a> <span class="meta">2025. <em>The Bedrock Principle</em>. With J. Mchangama and I. Anzabi.</span></li>
+  <li><a href="https://www.techpolicy.press/safeguarding-freedom-of-expression-in-the-ai-era/">Safeguarding Freedom of Expression in the AI Era.</a> <span class="meta">2024. <em>Tech Policy Press</em>.</span></li>
+  <li><a href="https://www.techpolicy.press/dsa-showdown-unpacking-the-eus-preliminary-findings-against-x/">DSA Showdown: Unpacking the EU's Preliminary Findings Against X.</a> <span class="meta">2024. <em>Tech Policy Press</em>.</span></li>
+  <li><a href="https://www.techpolicy.press/the-digital-services-act-meets-the-ai-act-bridging-platform-and-ai-governance/">The Digital Services Act Meets the AI Act: Bridging Platform and AI Governance.</a> <span class="meta">2024. <em>Tech Policy Press</em>. With J. Barata.</span></li>
+  <li><a href="https://www.techpolicy.press/generative-ai-should-commit-to-free-speech-and-access-to-information/">Generative AI Developers Should Commit to Free Speech and Access to Information.</a> <span class="meta">2024. <em>Tech Policy Press</em>.</span></li>
+  <li><a href="https://theconversation.com/ai-chatbots-refuse-to-produce-controversial-output-why-thats-a-free-speech-problem-226596">AI Chatbots Refuse to Produce "Controversial" Output — Why That's a Free Speech Problem.</a> <span class="meta">2024. <em>The Conversation</em>. With J. Mchangama.</span></li>
+  <li><a href="https://www.techpolicy.press/the-european-commissions-approach-to-dsa-systemic-risk-is-concerning-for-freedom-of-expression/">The European Commission's Approach to DSA Systemic Risk Is Concerning for Freedom of Expression.</a> <span class="meta">2023. <em>Tech Policy Press</em>. With J. Barata.</span></li>
 </ul>
 
 <h2>Book Chapters</h2>
 <ul>
-  <li><a href="#">Spain: Competition Compliance 2018.</a> <span class="meta">In <em>Getting the Deal Through: Competition Compliance</em>, 2018.</span></li>
-  <li><a href="#">Consecuencias jurídicas en España de la infracción de los artículos 1 y 2 de la LDC y de los artículos 101 y 102 del TFUE.</a> <span class="meta">In <em>Yearbook of Antitrust Law 2016</em>. With A. Guerra.</span></li>
+  <li>Spain: Competition Compliance 2018. <span class="meta">In <em>Getting the Deal Through: Competition Compliance</em>, 2018.</span></li>
+  <li>Consecuencias jurídicas en España de la infracción de los artículos 1 y 2 de la LDC y de los artículos 101 y 102 del TFUE. <span class="meta">In <em>Yearbook of Antitrust Law 2016</em>. With A. Guerra.</span></li>
 </ul>
 
 <h2>Policy Advising and Service</h2>
