@@ -31,16 +31,17 @@
   :focus-visible{outline:2px solid var(--link); outline-offset:2px}
 
   /* Header */
-  .head{display:flex; gap:32px; align-items:flex-start; justify-content:space-between}
-  h1{font-size:2.1rem; font-weight:600; letter-spacing:-.015em; margin:0 0 10px; line-height:1.1}
-  .affil{font-family:"Inter",system-ui,sans-serif; font-size:.92rem; line-height:1.55; color:var(--soft); margin:0}
+  .head{display:flex; gap:40px; align-items:flex-start; justify-content:space-between}
+  .head > div{padding-top:6px}
+  h1{font-size:2.3rem; font-weight:600; letter-spacing:-.015em; margin:0 0 14px; line-height:1.1}
+  .affil{font-family:"Inter",system-ui,sans-serif; font-size:.95rem; line-height:1.6; color:var(--soft); margin:0}
   .affil strong{color:var(--ink); font-weight:500}
   .photo{
-    width:104px; height:130px; flex:none; object-fit:cover;
+    width:172px; height:215px; flex:none; object-fit:cover; object-position:center top;
     border-radius:2px; filter:grayscale(100%); background:var(--rule);
   }
 
-  .intro{margin:30px 0 0}
+  .intro{margin:36px 0 0}
   .intro p{margin:0 0 1.05em}
 
   .links{
@@ -80,9 +81,10 @@
 
   @media (max-width:600px){
     body{padding:40px 20px 64px; font-size:17px}
-    .head{flex-direction:column-reverse; gap:20px}
-    .photo{width:92px; height:112px}
-    h1{font-size:1.75rem}
+    .head{flex-direction:column-reverse; gap:22px; align-items:stretch}
+    .head > div{padding-top:0}
+    .photo{width:136px; height:170px}
+    h1{font-size:1.85rem}
   }
 </style>
 </head>
@@ -112,11 +114,12 @@
 </div>
 
 <div class="links">
-  <a href="mailto:jordicalvetbademunt@gmail.com">Email</a>
+  <a href="mailto:jcalvet@proton.me">jcalvet@proton.me</a>
   <span class="sep">|</span>
-  <a href="https://scholar.google.com/citations?user=Ghtodx4AAAAJ&hl=en">Google Scholar</a>
+  <!-- Paste your Google Scholar profile URL here, or delete this link and the separator before it. -->
+  <a href="#">Google Scholar</a>
   <span class="sep">|</span>
-  <a href="https://linkedin.com/in/jordi-calvet-bademunt">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/jordi-calvet-bademunt-78391520/">LinkedIn</a>
   <span class="sep">|</span>
   <a href="cv.pdf">CV</a>
 </div>
@@ -203,7 +206,7 @@
 </ul>
 
 <footer>
-  jordicalvetbademunt@gmail.com · Updated August 2026
+  <a href="mailto:jcalvet@proton.me" style="color:inherit;border-bottom:none">jcalvet@proton.me</a> · Updated August 2026
 </footer>
 
 </body>
